@@ -1,22 +1,19 @@
-import "package:akamni_markazi_uchun/classs/uznomer_class_builder.dart";
-import "package:flutter/material.dart";
+import 'package:akamni_markazi_uchun/classs/log_in/Engnomer.dart';
+import 'package:akamni_markazi_uchun/classs/log_in/rusnomer.dart';
+import 'package:akamni_markazi_uchun/classs/log_in/uznomer.dart';
+import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class PageMain extends StatelessWidget {
+  const PageMain({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.red.shade100,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return  Scaffold(
         body: Column(
           children: [
             Expanded(
               child: Center(
-                // padding: EdgeInsets.all(50.0),
                 child: Image.asset("images/logo.png"),
-                // color: Colors.yellow
               ),
               flex: 1,
             ),
@@ -28,7 +25,7 @@ class LoginPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Uz_nomer_ikki(),
+                          builder: (context) => Uz_nomer(),
                         ),
                       );
                     },
@@ -55,7 +52,14 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Ru_nomer(),
+                        ),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                         primary: Colors.red,
                         foregroundColor: Colors.blueAccent,
@@ -79,7 +83,14 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Eng_nomer(),
+                        ),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                         primary: Colors.red,
                         foregroundColor: Colors.blueAccent,
@@ -101,7 +112,6 @@ class LoginPage extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }

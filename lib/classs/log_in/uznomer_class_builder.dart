@@ -1,22 +1,21 @@
 import "package:flutter/material.dart";
 
-class Eng_nomer extends StatefulWidget {
+class Uznomerikki extends StatefulWidget{
+
+
   @override
-  State<StatefulWidget> createState() {
-    return Pressed();
-  }
+  State<Uznomerikki> createState() => _UznomerikkiState();
 }
 
-class Pressed extends State<Eng_nomer> {
+class _UznomerikkiState extends State<Uznomerikki> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.red.shade100,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Kirish"
+        ),
       ),
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
         body: ListView(
           children: [
             Column(
@@ -41,7 +40,7 @@ class Pressed extends State<Eng_nomer> {
                           borderRadius: BorderRadius.circular(50.0),
                           borderSide: BorderSide.none,
                         ),
-                        labelText: "Enter your phone number",
+                        labelText: "Telefon raqamingizni kiriting",
                         floatingLabelStyle:
                             const TextStyle(height: 4, color: Colors.black),
                         filled: true,
@@ -62,8 +61,8 @@ class Pressed extends State<Eng_nomer> {
                       obscureText: true,
                       decoration: InputDecoration(
                         contentPadding: EdgeInsets.all(20.0),
-                        hintText: "Password",
-                        labelText: "Enter your password:",
+                        hintText: "Parol",
+                        labelText: "Parolingizni kiriting:",
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(50.0),
                           borderSide: BorderSide.none,
@@ -99,7 +98,7 @@ class Pressed extends State<Eng_nomer> {
                       elevation: 15,
                       shadowColor: Colors.black),
                   child: Text(
-                    "Sign in",
+                    "Kirish",
                     style: TextStyle(fontSize: 25.0, color: Colors.white),
                   ),
                 ),
@@ -107,7 +106,6 @@ class Pressed extends State<Eng_nomer> {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }

@@ -10,25 +10,20 @@ class Uz_nomer extends StatefulWidget {
 class Pressed extends State<Uz_nomer> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    // return MaterialApp(
-    //   theme: ThemeData(
-    //     scaffoldBackgroundColor: Colors.red.shade100,
-    //   ),
-    //   debugShowCheckedModeBanner: false,
-      
-    //   home: Scaffold(
-
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.redAccent,
         title: Text(
-          "Kirish"
+          "Kirish",
+          style: TextStyle(
+            fontSize: 25.0,
+            color: Colors.black
+          ),
         ),
       ),
-        body: ListView(
+      body: ListView(
           children: [
             Column(
-              // mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
                   padding: EdgeInsets.all(20.0),
@@ -36,6 +31,8 @@ class Pressed extends State<Uz_nomer> {
                     child: Container(
                       alignment: Alignment.topCenter,
                       child: Image.asset("images/logo.png"),
+                      width: 300.0,
+                      height: 300.0,
                     ),
                   ),
                 ),
@@ -115,7 +112,6 @@ class Pressed extends State<Uz_nomer> {
             ),
           ],
         ),
-      );
-    
+    );
   }
 }
