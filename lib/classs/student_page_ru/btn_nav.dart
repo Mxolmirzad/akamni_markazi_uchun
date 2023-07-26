@@ -3,8 +3,8 @@ import 'package:akamni_markazi_uchun/classs/student_page_ru/payment.dart';
 import 'package:akamni_markazi_uchun/classs/student_page_ru/profil.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavigationBarExampleApp extends StatelessWidget {
-  const BottomNavigationBarExampleApp({super.key});
+class BottomNavigationBarExampleApp_Ru extends StatelessWidget {
+  const BottomNavigationBarExampleApp_Ru({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -70,6 +70,9 @@ flutter:
     - images/click.png
     - images/payme.png
     - images/123.png
+    - images/rus.png
+    - images/english.png
+    - images/uzbek.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

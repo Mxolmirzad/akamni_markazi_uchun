@@ -1,3 +1,4 @@
+import 'package:akamni_markazi_uchun/classs/student_page_ru/language.dart';
 import 'package:flutter/material.dart';
 
 class SettingPage extends StatefulWidget {
@@ -50,7 +51,14 @@ class _SettingPageState extends State<SettingPage> {
               child: Column(
                 children: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LanguagePage(),
+                        ),
+                      );
+                    },
                     child: ListTile(
                       leading: Icon(
                         Icons.language,

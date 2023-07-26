@@ -1,5 +1,6 @@
 import 'package:akamni_markazi_uchun/classs/student_page_eng/calendar_page.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class appBarGage extends StatefulWidget {
   const appBarGage({super.key});
@@ -9,12 +10,14 @@ class appBarGage extends StatefulWidget {
 }
 
 class _appBarGageState extends State<appBarGage> {
-  
   @override
   Widget build(BuildContext context) {
+    DateTime _today = DateTime.now();
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          launch("tel:+998991940606");
+        },
         backgroundColor: Colors.redAccent,
         child: Icon(
           Icons.support_agent,
@@ -38,7 +41,7 @@ class _appBarGageState extends State<appBarGage> {
               ),
               padding: EdgeInsets.all(5.0),
               child: Text(
-                "20.07.2023",
+                "${_today.day}.${_today.month}.${_today.year}",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 16.0,
@@ -46,7 +49,11 @@ class _appBarGageState extends State<appBarGage> {
               ),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  
+                });
+              },
               child: Icon(
                 Icons.notifications_none,
                 size: 24.0,

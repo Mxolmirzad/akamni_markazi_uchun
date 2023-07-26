@@ -3,8 +3,8 @@ import 'package:akamni_markazi_uchun/classs/student_page_uz/payment.dart';
 import 'package:akamni_markazi_uchun/classs/student_page_uz/profil.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavigationBarExampleApp extends StatelessWidget {
-  const BottomNavigationBarExampleApp({super.key});
+class BottomNavigationBarExampleApp_Uz extends StatelessWidget {
+  const BottomNavigationBarExampleApp_Uz({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class BottomNavigationBarExample extends StatefulWidget {
 
 class _BottomNavigationBarExampleState
     extends State<BottomNavigationBarExample> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     appBarGage(),
     PaymentPage(),
